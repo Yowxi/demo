@@ -3,9 +3,9 @@ const int ledPin = 2;
 unsigned long prevMs = 0;
 
 // 时间（毫秒）
-const int SHORT = 100;//短亮
-const int LONG  = 2000;//长亮
-const int GAP   = 200;//闪与闪之间间隔
+const int SHORT = 250;//短亮
+const int LONG  = 1000;//长亮
+const int GAP   = 250;//闪与闪之间间隔
 const int LETTER_GAP = 700;//字母之间间隔
 const int END_PAUSE = 5000;//一段过后间隔
 
