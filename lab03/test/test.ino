@@ -1,5 +1,7 @@
 // 定义LED引脚
-const int ledPin = 2;  
+const int ledPin = 4;  
+const int ledPgreen = 18;  
+const int ledPyellow = 22;  
 
 // 设置PWM属性
 const int freq = 10000;          // 频率 10000Hz
@@ -18,6 +20,8 @@ void loop() {
   for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){   
     // 【新版用法】直接通过引脚号写入，不再需要指定通道
     ledcWrite(ledPin, dutyCycle);   
+    ledcWrite(ledPgreen, dutyCycle);   
+    ledcWrite(ledPyellow, dutyCycle);   
     delay(10);
   }
 
